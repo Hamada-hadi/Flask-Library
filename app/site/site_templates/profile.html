@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+    <section class="bg-dark text-light text-center shadow mb-20">
+        <div class="container p-5 bg-dark">
+            <div class="row">
+                <div class="d-md-flex bg-dark align-items-center justify-content-evenly">
+                    <h1 class="col text-center">{{ current_user.email}}'s reader</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center text-light">
+    <div class="container p-10">
+        <div class="row"><br>
+            <ul class="list-group">
+                <h3 class="p-5">Here are your profile details</h3>
+                <li class="list-group-item">Email: {{ current_user.email }}</li>
+                <li class="list-group-item">Token: {{ current_user.token }} </li> 
+            </ul>
+        </div>
+        <style>
+            body {
+                margin: 10;
+                padding: 10;
+                background: url('../../static/images/library4.jpg') center/cover no-repeat;
+                height: 50vh; /* Ensures the background covers the entire viewport */
+            }
+    
+            .d-flex {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 50vh; /* This is optional and ensures the content is centered vertically */
+            }
+        </style>
+    </section>
+{% endblock %}

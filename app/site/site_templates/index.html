@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+<section class="bg-dark text-light text-center shadow">
+    <div class="container p-5 bg-dark">
+        <div class="row">
+            <div class="d-md-flex bg-dark align-items-center justify-content-evenly">
+                <h1 class="col text-center"><br>Welcome To Our Library</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-info text-center">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('../../static/images/library5.jpg') center/cover no-repeat;
+            height: 100vh; /* Ensures the background covers the entire viewport */
+        }
+
+        .d-flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* This is optional and ensures the content is centered vertically */
+        }
+    </style>
+
+</section>
+{% endblock %}
